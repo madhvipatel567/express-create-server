@@ -15,7 +15,7 @@
     }
   },
   "lint-staged": {
-    "*": "npx prettier src -w"
+    "*": "npm run format"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
