@@ -8,7 +8,7 @@ const app = express()
 app.set('view engine', 'ejs')
 app.set('views', join(`${__dirname}../../src`, 'views'))
 
-app.get('/hello', function (req, res) {
+app.get('/hello', function (req,             res) {
   res.send('Hello World')
 })
 
