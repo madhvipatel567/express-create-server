@@ -12,6 +12,9 @@ app.get('/hello', function (req,             res) {
   res.send('Hello World')
 })
 
+
+
+
 app.use('/', (req, res) => {
   res.render('login.ejs');
 })
