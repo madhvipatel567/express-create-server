@@ -16,6 +16,8 @@ app.use('/', (req, res) => {
   res.render('login.ejs')
 })
 
+console.log('test')
+
 app.use((_error, req, res) =>
   res.status(500).json({
     message: 'Internal Server Error',
