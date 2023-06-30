@@ -8,7 +8,6 @@
     "ejs": "^3.1.8",
     "express": "^4.17.1"
   },
-  
   "devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.15",
@@ -30,7 +29,7 @@
     "format": "npx prettier src -w",
     "dev": "nodemon --exec babel-node src/app.js",
     "prepare": "husky install",
-    "lint-fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+    "lint-fix": "npx prettier src -w"
   },
   "husky": {
     "hooks": {
@@ -38,8 +37,8 @@
     }
   },
   "lint-staged": {
-    "*": [
-      "npm run format",
+    "*.{js,jsx,json,md}": [
+      "npm run lint-fix",
       "git add ."
     ]
   },
