@@ -9,13 +9,13 @@
     "express": "^4.17.1",
     "husky": "^8.0.3"
   },
- "husky": {
+  "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*": "npm run format"
+    "*": "prettier --write"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
